@@ -8,8 +8,8 @@ func inisialisasiDataDummy() {
 
 	dataPemilih[0] = Pemilih{idPemilih: 101, nama: "Fathir Muhammad", sudahMemilih: true}
 	dataPemilih[1] = Pemilih{idPemilih: 102, nama: "Fiandra Gaming", sudahMemilih: true}
-	dataPemilih[2] = Pemilih{idPemilih: 103, nama: "Dini Lestari", sudahMemilih: true}
-	dataPemilih[3] = Pemilih{idPemilih: 104, nama: "Bima Arya", sudahMemilih: false}
-	dataPemilih[4] = Pemilih{idPemilih: 105, nama: "Nadia Putri", sudahMemilih: false}
+	dataPemilih[2] = Pemilih{idPemilih: 103, nama: "Yogi Dharma Putra", sudahMemilih: true}
+	dataPemilih[3] = Pemilih{idPemilih: 104, nama: "Arjuna Gaming Gege", sudahMemilih: false}
+	dataPemilih[4] = Pemilih{idPemilih: 105, nama: "Ilman Sigma Voter", sudahMemilih: false}
 	jumlahPemilih = 5
 }
