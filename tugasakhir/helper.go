@@ -27,7 +27,7 @@ func pilihUrutanAscending(reader *bufio.Reader) bool {
 }
 
 func tampilkanHeader() {
-	fmt.Println("============================================================")
+	fmt.Println("====================================================================================")
 
 	if bannerDipilih != "" {
 		fmt.Print(bannerDipilih)
@@ -35,8 +35,8 @@ func tampilkanHeader() {
 		fmt.Println("+++ APLIKASI SISTEM PEMUNGUTAN SUARA DIGITAL (E-VOTING) +++")
 	}
 
-	fmt.Printf("Mode: %s | Kode Project: JEBB-%d\n", eel, jebb24)
-	fmt.Println("============================================================")
+	fmt.Printf("Mode: %s | Kode Project: SUJI-%d\n", eel, suji301)
+	fmt.Println("====================================================================================")
 }
 
 func clearScreen() {
