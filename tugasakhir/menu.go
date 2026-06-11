@@ -35,15 +35,16 @@ func menuAwal(reader *bufio.Reader) bool {
 }
 
 func pilihBanner(reader *bufio.Reader) bool {
-	banner := [2]string{
-		`
+	var banner [100]string
+	banner[0] = (`
     ______            _    ______  ___________   ________
    / ____/           | |  / / __ \/_  __/  _/ | / / ____/
   / __/    ______    | | / / / / / / /  / //  |/ / / __  
  / /___   /_____/    | |/ / /_/ / / / _/ // /|  / /_/ /  
 /_____/              |___/\____/ /_/ /___/_/ |_/\____/   
-`,
-		`                                                                                    
+`)
+		banner[1] = (`
+                                                                                    
   ▄▄▄▄▄▄▄             ▄▄▄          ▄▄▄▄      ▄▄▄▄▄▄▄    ▄▄▄▄▄▄   ▄▄     ▄▄▄  ▄   ▄▄▄▄ 
  █▀██▀▀▀             █▀██  ██▀▀  ▄█▀▀████▄  █▀▀██▀▀▀▀  █▀ ██     ██▄   ██▀   ▀██████▀ 
    ██                  ██  ██    ██    ██      ██         ██     ███▄  ██      ██   ▄ 
@@ -52,8 +53,20 @@ func pilihBanner(reader *bufio.Reader) bool {
    ▀█████               ▀███▀     ▀████▀       ▀██▄     ▄▄██▄▄ ▀██▀    ██      ▀█████ 
                                                                                ▄   ██ 
                                                                                ▀████▀ 
-`,
-	}
+`)
+		banner[2] = (`
+$$$$$$$$\                     $$\    $$\            $$\     $$\                     
+$$  _____|                    $$ |   $$ |           $$ |    \__|                    
+$$ |                          $$ |   $$ | $$$$$$\ $$$$$$\   $$\ $$$$$$$\   $$$$$$\  
+$$$$$\          $$$$$$\       \$$\  $$  |$$  __$$\\_$$  _|  $$ |$$  __$$\ $$  __$$\ 
+$$  __|         \______|       \$$\$$  / $$ /  $$ | $$ |    $$ |$$ |  $$ |$$ /  $$ |
+$$ |                            \$$$  /  $$ |  $$ | $$ |$$\ $$ |$$ |  $$ |$$ |  $$ |
+$$$$$$$$\                        \$  /   \$$$$$$  | \$$$$  |$$ |$$ |  $$ |\$$$$$$$ |
+\________|                        \_/     \______/   \____/ \__|\__|  \__| \____$$ |
+                                                                          $$\   $$ |
+                                                                          \$$$$$$  |
+                                                                           \______/ 
+`)
 
 	for {
 		clearScreen()
@@ -67,6 +80,9 @@ func pilihBanner(reader *bufio.Reader) bool {
 		fmt.Println("2. Banner 2")
 		fmt.Print(banner[1])
 
+		fmt.Println("3. Banner 3")
+		fmt.Print(banner[2])
+
 		fmt.Println("0. Kembali")
 		fmt.Println("------------------------------------------------------------")
 
@@ -78,6 +94,9 @@ func pilihBanner(reader *bufio.Reader) bool {
 			return true
 		case 2:
 			bannerDipilih = banner[1]
+			return true
+		case 3:
+			bannerDipilih = banner[2]
 			return true
 		case 0:
 			return false
