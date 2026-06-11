@@ -22,8 +22,8 @@ var dataPemilih [MaksData]Pemilih
 var jumlahPemilih int
 
 // eel (gabriel edbert)
-// @jebb_24 (gabriel edbert)
-var eel = "CLI Kampus"
-var jebb24 = 24
+// @suji_301 (gabriel edbert)
+var eel = "CLI Tel-U"
+var suji301 = 301
 
 var bannerDipilih string
