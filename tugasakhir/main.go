@@ -12,6 +12,6 @@ func main() {
 		return
 	}
 
-	inisialisasiDataDummy()
+	dummmy()
 	menuUtama(reader)
 }

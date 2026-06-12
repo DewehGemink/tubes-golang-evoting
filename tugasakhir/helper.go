@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"os"
 )
 
 func pilihUrutanAscending(reader *bufio.Reader) bool {
@@ -40,9 +41,7 @@ func tampilkanHeader() {
 }
 
 func clearScreen() {
-	for i := 0; i < 25; i++ {
-		fmt.Println()
-	}
+	os.Stdout.WriteString("\033[H\033[2J")
 }
 
 func pause(reader *bufio.Reader) {

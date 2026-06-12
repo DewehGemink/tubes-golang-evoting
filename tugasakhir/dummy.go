@@ -1,6 +1,6 @@
 package main
 
-func inisialisasiDataDummy() {
+func dummmy() {
 	dataKandidat[0] = Kandidat{nomorUrut: 1, nama: "Prabowo Subianto", visiMisi: "MBG No 1", jumlahSuara: 2}
 	dataKandidat[1] = Kandidat{nomorUrut: 2, nama: "Rafi Maulana", visiMisi: "Aku Suka Rodok", jumlahSuara: 1}
 	dataKandidat[2] = Kandidat{nomorUrut: 3, nama: "Ilman Baruna", visiMisi: "Kudus Negeri Kretek", jumlahSuara: 0}
