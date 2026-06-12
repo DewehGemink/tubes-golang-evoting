@@ -1,6 +1,6 @@
 package main
 
-// proses selection sort manual berdasarkan jumlah suara (gabriel edbert)
+// SELECTIONT SORT MANUAL JUMLAH SUARA KANDIDAT
 func selectionSortJumlahSuara(ascending bool) {
 	for i := 0; i < jumlahKandidat-1; i++ {
 		posisi := i
@@ -25,7 +25,7 @@ func selectionSortJumlahSuara(ascending bool) {
 	}
 }
 
-// proses insertion sort manual berdasarkan nomor urut (gabriel edbert)
+// INSERTIONT SORT MANUAL NOMOR URUT KANDIDAT
 func insertionSortNomorUrut(ascending bool) {
 	for i := 1; i < jumlahKandidat; i++ {
 		key := dataKandidat[i]
@@ -47,7 +47,7 @@ func insertionSortNomorUrut(ascending bool) {
 	}
 }
 
-// proses mencari kandidat berdasarkan nomor urut secara sequential (gabriel edbert)
+// KANDIDAT SEQUENTIAL REFER DARI NOMOR URUT KANDIDAT
 func sequentialSearchKandidat(nomor int) int {
 	for i := 0; i < jumlahKandidat; i++ {
 		if dataKandidat[i].nomorUrut == nomor {
@@ -58,7 +58,7 @@ func sequentialSearchKandidat(nomor int) int {
 	return -1
 }
 
-// proses binary search setelah data kandidat diurutkan ascending (gabriel edbert)
+// BINARY SEARCH KANDIDAT TERURUT ASCENDING
 func binarySearchKandidat(nomor int) int {
 	kiri := 0
 	kanan := jumlahKandidat - 1
@@ -78,7 +78,7 @@ func binarySearchKandidat(nomor int) int {
 	return -1
 }
 
-// proses mencari pemilih berdasarkan id secara sequential (gabriel edbert)
+// PEMILIH SEQUENTIAL REFER DARI ID PEMILIH
 func sequentialSearchPemilih(id int) int {
 	for i := 0; i < jumlahPemilih; i++ {
 		if dataPemilih[i].idPemilih == id {

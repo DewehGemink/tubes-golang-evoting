@@ -21,8 +21,7 @@ var jumlahKandidat int
 var dataPemilih [MaksData]Pemilih
 var jumlahPemilih int
 
-// eel (gabriel edbert)
-// @suji_301 (gabriel edbert)
+// VARIABEL GLOBAL
 var eel = "CLI Tel-U"
 var suji301 = 301
 
