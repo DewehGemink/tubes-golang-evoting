@@ -9,10 +9,10 @@ func menuAwal(reader *bufio.Reader) bool {
 	for {
 		clearScreen()
 		fmt.Println("============================================================")
-		fmt.Println("+++ SETUP BANNER APLIKASI E-VOTING +++")
+		fmt.Println(":) :( :) :( :) BANNER SELECTIONT E-VOTING :) :( :) :( :)")
 		fmt.Println("============================================================")
 		fmt.Println("1. Pilih Banner")
-		fmt.Println("0. Keluar")
+		fmt.Println("0. Keluar (jangan pls)")
 		fmt.Println("------------------------------------------------------------")
 
 		pilihan := inputInt(reader, "Pilih menu: ")
@@ -71,22 +71,22 @@ $$$$$$$$\                        \$  /   \$$$$$$  | \$$$$  |$$ |$$ |  $$ |\$$$$$
 	for {
 		clearScreen()
 		fmt.Println("============================================================")
-		fmt.Println("+++ PILIH BANNER E-VOTING +++")
+		fmt.Println(":) :( :) :( :) BANNER SELECTIONT E-VOTING :) :( :) :( :)")
 		fmt.Println("============================================================")
 
-		fmt.Println("1. Banner 1")
+		fmt.Println("1. THE FUTURE")
 		fmt.Print(banner[0])
 
-		fmt.Println("2. Banner 2")
+		fmt.Println("2. THE SCARED")
 		fmt.Print(banner[1])
 
-		fmt.Println("3. Banner 3")
+		fmt.Println("3. THE FRIGHTENED")
 		fmt.Print(banner[2])
 
 		fmt.Println("0. Kembali")
 		fmt.Println("------------------------------------------------------------")
 
-		pilihan := inputInt(reader, "Pilih banner: ")
+		pilihan := inputInt(reader, "Choose your banner: ")
 
 		switch pilihan {
 		case 1:
