@@ -1,10 +1,10 @@
 package main
 
 func dummmy() {
-	dataKandidat[0] = Kandidat{nomorUrut: 1, nama: "Prabowo Subianto", visiMisi: "MBG No 1", jumlahSuara: 2}
-	dataKandidat[1] = Kandidat{nomorUrut: 2, nama: "Rafi Maulana", visiMisi: "Aku Suka Rodok", jumlahSuara: 1}
-	dataKandidat[2] = Kandidat{nomorUrut: 3, nama: "Ilman Baruna", visiMisi: "Kudus Negeri Kretek", jumlahSuara: 0}
-	dataKandidat[3] = Kandidat{nomorUrut: 4, nama: "Nicole Reeyn", visiMisi: "Varcole Jaya", jumlahSuara: 3}
+	dataKandidat[0] = Kandidat{nomorUrut: 1, nama: "Prabowo Subianto", visiMisi: "MBG No 1", jumlahSuara: 5}
+	dataKandidat[1] = Kandidat{nomorUrut: 2, nama: "Rafi Maulana", visiMisi: "Aku Suka Rodok", jumlahSuara: 6}
+	dataKandidat[2] = Kandidat{nomorUrut: 3, nama: "Ilman Baruna", visiMisi: "Kudus Negeri Kretek", jumlahSuara: 8}
+	dataKandidat[3] = Kandidat{nomorUrut: 4, nama: "Nicole Reeyn", visiMisi: "Varcole Jaya", jumlahSuara: 10}
 	jumlahKandidat = 4
 
 	dataPemilih[0] = Pemilih{idPemilih: 101, nama: "Fathir Muhammad", sudahMemilih: true}
