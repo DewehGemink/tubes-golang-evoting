@@ -275,10 +275,10 @@ func menuSearching(reader *bufio.Reader) {
 			continue
 		}
 
-		nomor := inputIntMin(reader, "Masukkan nomor urut kandidat: ", 1)
-
+		
 		switch pilihan {
 		case 1:
+			nomor := inputIntMin(reader, "Masukkan nomor urut kandidat: ", 1)
 			index := sequentialSearchKandidat(nomor)
 			if index == -1 {
 				fmt.Println("Kandidat tidak ditemukan.")
@@ -287,6 +287,7 @@ func menuSearching(reader *bufio.Reader) {
 			}
 			pause(reader)
 		case 2:
+			nomor := inputIntMin(reader, "Masukkan nomor urut kandidat: ", 1)
 			insertionSortNomorUrut(true)
 			fmt.Println("Data diurutkan ascending terlebih dahulu sebelum Binary Search.")
 			index := binarySearchKandidat(nomor)
