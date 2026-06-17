@@ -1,6 +1,6 @@
 package main
 
-// SELECTIONT SORT MANUAL JUMLAH SUARA KANDIDAT
+// SELECTIONT SORT JUMLAH SUARA KANDIDAT
 func selectionSortJumlahSuara(ascending bool) {
 	for i := 0; i < jumlahKandidat-1; i++ {
 		posisi := i
@@ -25,7 +25,7 @@ func selectionSortJumlahSuara(ascending bool) {
 	}
 }
 
-// INSERTIONT SORT MANUAL NOMOR URUT KANDIDAT
+// INSERTIONT SORT NOMOR URUT KANDIDAT
 func insertionSortNomorUrut(ascending bool) {
 	for i := 1; i < jumlahKandidat; i++ {
 		key := dataKandidat[i]
@@ -47,7 +47,7 @@ func insertionSortNomorUrut(ascending bool) {
 	}
 }
 
-// KANDIDAT SEQUENTIAL REFER DARI NOMOR URUT KANDIDAT
+// SEQUENTIAL NOMOR URUT KANDIDAT
 func sequentialSearchKandidat(nomor int) int {
 	for i := 0; i < jumlahKandidat; i++ {
 		if dataKandidat[i].nomorUrut == nomor {
@@ -58,7 +58,7 @@ func sequentialSearchKandidat(nomor int) int {
 	return -1
 }
 
-// BINARY SEARCH KANDIDAT TERURUT ASCENDING
+// BINARY SEARCH NOMOR URUT KANDIDAT
 func binarySearchKandidat(nomor int) int {
 	kiri := 0
 	kanan := jumlahKandidat - 1
@@ -78,7 +78,7 @@ func binarySearchKandidat(nomor int) int {
 	return -1
 }
 
-// PEMILIH SEQUENTIAL REFER DARI ID PEMILIH
+// SEQUENTIAL PEMILIH ID PEMILIH
 func sequentialSearchPemilih(id int) int {
 	for i := 0; i < jumlahPemilih; i++ {
 		if dataPemilih[i].idPemilih == id {
